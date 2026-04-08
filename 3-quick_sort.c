@@ -29,7 +29,7 @@ static void swap_and_print(int *array, size_t size, int i, int j)
 {
 	int tmp;
 
-	if (i == j)
+	if (i == j || array[i] == array[j])
 		return;
 
 	tmp = array[i];
