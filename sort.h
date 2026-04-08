@@ -3,12 +3,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * struct listint_s - Doubly linked list node structure
+ * @n: Integer value stored in the node
+ * @prev: Pointer to the previous node in the list
+ * @next: Pointer to the next node in the list
+ */
 
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 }
 listint_t;
 
